@@ -1,0 +1,12 @@
+src/
+test/
+scripts/
+.avatartion-ref/
+.claude/
+.omc/
+.git/
+*.ts
+!*.d.ts
+tsconfig.json
+vitest.config.ts
+.gitignore

@@ -1,12 +1,34 @@
 {
   "name": "avatartion-cli",
   "version": "1.0.0",
+  "description": "CLI tool for generating Notion-style avatars",
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "bin": {
     "avatartion": "./dist/cli.js"
   },
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "keywords": [
+    "avatar",
+    "notion",
+    "cli",
+    "svg",
+    "png",
+    "generator"
+  ],
+  "author": "greatSumini",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greatSumini/avatartion-cli.git"
+  },
   "scripts": {
     "build": "tsc",
+    "prepublishOnly": "tsc",
     "extract": "node scripts/extract-svgs.mjs",
     "test": "vitest run"
   },
