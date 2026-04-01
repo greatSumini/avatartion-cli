@@ -1,0 +1,9 @@
+export { faces } from './faces.js';
+export { hairs } from './hairs.js';
+export { eyes } from './eyes.js';
+export { mouths } from './mouths.js';
+export { outfits } from './outfits.js';
+export { accessories } from './accessories.js';
+export { facialHairs } from './facial-hairs.js';
+export { body } from './body.js';
+export { backgrounds } from './backgrounds.js';
