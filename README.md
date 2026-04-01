@@ -2,7 +2,7 @@
 
 # avatartion-cli
 
-CLI tool for generating Notion-style avatars.
+CLI port of [Avatartion](https://github.com/wilmerterrero/Avatartion) — generate Notion-style avatars from the command line.
 
 ## Quick Start
 
