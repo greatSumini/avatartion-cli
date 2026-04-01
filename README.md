@@ -74,6 +74,30 @@ avatartion generate --background blue
 
 Available background names: `transparent`, `white`, `red`, `yellow`, `green`, `blue`, `indigo`, `purple`, `pink`.
 
+## Programmatic Usage
+
+```typescript
+import { randomAvatar, composeSvg, exportPng, serialize, deserialize } from 'avatartion-cli';
+
+// Generate a random avatar SVG string
+const config = randomAvatar();
+const svg = composeSvg(config);
+
+// Customize specific parts
+const custom = composeSvg({
+  face: 3, hair: 12, eyes: 2, mouth: 5,
+  outfit: 10, accessories: 1, facialHair: 4,
+  background: 'blue',
+});
+
+// Export to file
+await exportPng(svg, 'avatar.png', 1024);
+
+// Serialize / deserialize (compatible with avatartion.com)
+const code = serialize(config);
+const restored = deserialize(code);
+```
+
 ## Sharing
 
 Avatars use the same encoding format as [avatartion.com](https://avatartion.com), so avatar strings can be shared and decoded across both the CLI and the website.
